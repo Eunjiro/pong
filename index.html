@@ -6,9 +6,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Pong Game</h1>
-  <div id="gameContainer">
-    <canvas id="pongCanvas" width="800" height="500"></canvas>
+  <div class="main">
+    <div class="sidebar">
+      <h1>Pong Game</h1>
+      <h5>Choose Difficulty:</h5>
+      <div id="difficultyOptions">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+        <button id="impossible">Impossible</button>
+      </div>
+      <h5>Hotkeys:</h5>
+      <ul>
+        <li><strong>D</strong>: Serve the ball</li>
+        <li><strong>Space</strong>: Pause/Resume</li>
+      </ul>
+    </div>
+    <div id="gameContainer">
+      <canvas id="pongCanvas" width="800" height="500"></canvas>
+    </div>
   </div>
   <script src="script.js"></script>
 </body>
